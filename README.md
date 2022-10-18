@@ -55,7 +55,7 @@ $ catkin build
 $ source devel/setup.bash
 $ roslaunch rpg_quadrotor_integration_test my_racing.launch
 ```
-Differential flatness-based controller is used by default. To use model predictive control add arguement `use_mpc:=true` at the end of the launch command. All the gate positions and trajectory generation options can be specified in the `rpg_quadrotor_control/test/rpq_quadrotor_integration_test/src/my_racing.cpp`. 
+Differential flatness-based controller is used by default. To use model predictive control add arguement `use_mpc:=true` at the end of the launch command. All the gate positions and trajectory generation options can be specified in the `rpg_quadrotor_control/test/rpq_quadrotor_integration_test/src/my_racing.cpp`. More details can be obainted from the report `report.pdf`.
 
 Contact me at anavsalkar@gmail.com for additional questions. 
 
