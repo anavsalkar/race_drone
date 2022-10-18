@@ -8,16 +8,15 @@ Installation Instructions - Developed on Ubuntu 20.04 ROS Melodic
 ---------------------------------------------------------
  1. Install system dependencies:
 
- ```
- $ sudo apt-get install libgoogle-glog-dev protobuf-compiler ros-$ROS_DISTRO-octomap-msgs ros-$ROS_DISTRO-octomap-ros ros-$ROS_DISTRO-joy python3-vcstool
-
- ```
+   ```
+   $ sudo apt-get install libgoogle-glog-dev protobuf-compiler ros-$ROS_DISTRO-octomap-msgs ros-$ROS_DISTRO-octomap-ros ros-$ROS_DISTRO-joy python3-vcstool
+   ```
  2. Get catkin tools with the following commands:
 
- ```
- $ sudo apt-get install python-pip
- $ sudo pip install catkin-tools
- ```
+   ```
+   $ sudo apt-get install python-pip
+   $ sudo pip install catkin-tools
+   ```
 
  3. Create a catkin workspace with the following commands:
 
@@ -58,6 +57,6 @@ $ roslaunch rpg_quadrotor_integration_test my_racing.launch
 ```
 Differential flatness-based controller is used by default. To use model predictive control add arguement `use_mpc:=true` at the end of the launch command. All the gate positions and trajectory generation options can be specified in the `rpg_quadrotor_control/test/rpq_quadrotor_integration_test/src/my_racing.cpp`. 
 
-Contact me at anavsalkar@gmail.com additional questions. 
+Contact me at anavsalkar@gmail.com for additional questions. 
 
  
