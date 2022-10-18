@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="quad_name" default="hummingbird"/>
+  <arg name="use_mpc" default="true"/>
+  <arg name="use_unity_editor" default="false" />
+
+
+  <include file="$(find rpg_rotors_interface)/launch/quadrotor_empty_world.launch">
+    <arg name="quad_name" value="$(arg quad_name)"/>
+    <arg name="enable_command_feedthrough" value="True"/>
+    <arg name="use_mpc" value="$(arg use_mpc)"/>
+
+  </include>
+
+  <group ns="$(arg quad_name)" >
+    <node pkg="rpg_quadrotor_integration_test" 
+          type="my_racing_node"
+          name="my_racing_node"
+          output="screen">
+    </node>
+  </group>
+
+  <node pkg="flightros" type="flight_pilot_node" name="flight_pilot_node" output="screen">
+      <rosparam file="$(find flightros)/params/default.yaml" />
+      <remap from="flight_pilot/state_estimate" to="/hummingbird/ground_truth/odometry" />
+  </node>
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find rpg_quadrotor_integration_test)/rviz/config_file.rviz" />
+
+
+
+</launch>
