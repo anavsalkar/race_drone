@@ -3,6 +3,9 @@ Racing Drones Simulation Framework
 
 This repositories contains various packages to simulate drone racing. This is primarily based on [Flightmare](https://github.com/uzh-rpg/flightmare), [RotorS](https://github.com/ethz-asl/rotors_simulator), [RPG Quadrotor Control](https://github.com/uzh-rpg/rpg_quadrotor_control) and [RPG MPC](https://github.com/uzh-rpg/rpg_mpc).
 
+[![IMAGE ALT TEXT HERE](./nmpc_thumbnail.png)](https://youtu.be/mKJUHDs2lqE)
+[![IMAGE ALT TEXT HERE](./dfbc_thumbnail.png)](https://youtu.be/3pVV3MGlQcE)
+
 
 Installation Instructions - Developed on Ubuntu 20.04 ROS Melodic
 ---------------------------------------------------------
