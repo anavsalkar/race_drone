@@ -5,11 +5,11 @@ This repositories contains various packages to simulate drone racing. This is pr
 
 
 Drone Racing using Nonlinear Model Predictive Control
-[![IMAGE ALT TEXT HERE](./nmpc_thumbnail.png)](https://youtu.be/mKJUHDs2lqE)
+[![IMAGE ALT TEXT HERE](./nmpc_thumbnail_.png)](https://youtu.be/mKJUHDs2lqE)
 
 
 Drone Racing using Differential Flatness-based Control
-[![IMAGE ALT TEXT HERE](./dfbc_thumbnail.png)](https://youtu.be/3pVV3MGlQcE)
+[![IMAGE ALT TEXT HERE](./dfbc_thumbnail_.png)](https://youtu.be/3pVV3MGlQcE)
 
 
 Installation Instructions - Developed on Ubuntu 20.04 ROS Melodic
