@@ -238,7 +238,7 @@ while (autopilot_helper_.getCurrentTrajectoryExecutionLeftDuration() >
   
 
 }
-
+}
 int main(int argc, char** argv) {
   
   ros::init(argc, argv, "rpg_quadrotor_integration_test");
